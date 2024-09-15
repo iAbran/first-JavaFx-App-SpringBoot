@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aplication.javaFx.Controller">
+   <children>
+      <Label layoutX="22.0" layoutY="91.0" prefHeight="25.0" prefWidth="63.0" text="ID" />
+      <Button fx:id="btnAgregar" layoutX="35.0" layoutY="334.0" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="100.0" text="Agregar" />
+      <Label layoutX="22.0" layoutY="135.0" prefHeight="25.0" prefWidth="63.0" text="NOMBRE" />
+      <Label layoutX="22.0" layoutY="179.0" prefHeight="25.0" prefWidth="63.0" text="TELEFONO" />
+      <TextField fx:id="textId" layoutX="132.0" layoutY="91.0" />
+      <TextField fx:id="textNumero" layoutX="132.0" layoutY="179.0" />
+      <TextField fx:id="textNombre" layoutX="132.0" layoutY="135.0" />
+      <Button fx:id="btnActualizar" layoutX="164.0" layoutY="334.0" mnemonicParsing="false" onAction="#edite" prefHeight="35.0" prefWidth="100.0" text="Actualizar" />
+      <Button fx:id="btnEliminar" layoutX="291.0" layoutY="334.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="100.0" text="Eliminar" />
+      <Label layoutX="234.0" layoutY="17.0" prefHeight="35.0" prefWidth="233.0" text="**** MOTETE APP ****" textFill="#ab2626">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLimpiar" layoutX="417.0" layoutY="334.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="100.0" text="Limpiar" />
+      <Label layoutX="22.0" layoutY="219.0" prefHeight="25.0" prefWidth="100.0" text="Registros Totales" />
+      <Label fx:id="totalRegistros" layoutX="135.0" layoutY="219.0" prefHeight="25.0" prefWidth="25.0" />
+      <ListView fx:id="list" layoutX="314.0" layoutY="91.0" prefHeight="200.0" prefWidth="416.0" />
+      <Label layoutX="612.0" layoutY="375.0" prefHeight="17.0" prefWidth="124.0" text="Copyright: Motete" />
+      <Label fx:id="alerta" layoutX="22.0" layoutY="274.0" prefHeight="17.0" prefWidth="217.0" text="WARNING:  completa todos los campos" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
